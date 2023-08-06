@@ -10,6 +10,7 @@ The secondaryTitle was hardCoded, The code I've changed has been updated to dyna
 
  <img width="514" alt="Screenshot 2023-08-06 at 5 13 04 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/86939065-7c50-41e2-9029-dc801347e328">
 
+
 2.  In the table order submitted date is missing, we have timestamp data included in the `src\assets\timeStamps.json` with the corresponding ids, please combine that with the order data and make sure the order submitted date is being displayed in the table
 
 Ans- In src/components/list/List.jsx, This sets up a useEffect hook, which runs the provided callback function when certain dependencies change. Likewise in this case, it runs whenever the rows prop changes.
