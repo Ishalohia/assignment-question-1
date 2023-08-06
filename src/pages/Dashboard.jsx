@@ -14,7 +14,8 @@ const Dashboard = ({theme}) => {
   const [selectedOrderDetails, setSelectedOrderDetails] = useState({});
   const [selectedOrderTimeStamps, setSelectedOrderTimeStamps] = useState({});
 
-    const headerStyles = theme === "light" ?  styles.headerLight : styles.headerDark ;
+  // Conditionally applying the styles based on the theme selected. For Storybook
+  const headerStyles = theme === "light" ?  styles.headerLight : styles.headerDark ;
 
   // Combining timestamp data with order data to include the order submitted date in it.
   const combinedData = mockData.results.map((order) => ({
@@ -28,8 +29,8 @@ const Dashboard = ({theme}) => {
   );
 
   // Handler function to update the selected currency from the dropdown
-  const handleCurrencyChange = (event) => {
-    setSelectedCurrency(event.target.value);
+  const handleCurrencyChange = (e) => {
+    setSelectedCurrency(e.target.value);
   };
 
    // Handler function to update the selected order details and timestamps

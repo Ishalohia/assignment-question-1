@@ -37,7 +37,6 @@ const handleOrderClick = (selectedOrder) => {
       });
       setRowsWithTimestamp(updatedRows);
     };
-
     combineTimestampWithRows();
   }, [rows]);
 
@@ -49,7 +48,7 @@ const handleOrderClick = (selectedOrder) => {
           <ListHeaderCell>Buy/Sell</ListHeaderCell>
           <ListHeaderCell>Country</ListHeaderCell>
           <ListHeaderCell>Order Submitted</ListHeaderCell>
-          <ListHeaderCell>Order Volume / {selectedCurrency}</ListHeaderCell>
+          <ListHeaderCell>Order Volume / {selectedCurrency}</ListHeaderCell> 
         </ListHeader>
       </thead>
       <tbody>
