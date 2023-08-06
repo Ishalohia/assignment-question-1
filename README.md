@@ -8,8 +8,7 @@ The primaryTitle is set to "Orders", which remains constant and is intended to d
 
 The secondaryTitle was hardCoded, The code I've changed has been updated to dynamically calculate the number of orders using the length of "mockData.results" array. 
 
- <img width="514" alt="Screenshot 2023-08-06 at 5 13 04 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/86939065-7c50-41e2-9029-dc801347e328">
-
+<img width="513" alt="Screenshot 2023-08-06 at 6 11 18 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/54a89a7a-8e36-40a2-81fa-602363c9355f">
 
 2.  In the table order submitted date is missing, we have timestamp data included in the `src\assets\timeStamps.json` with the corresponding ids, please combine that with the order data and make sure the order submitted date is being displayed in the table
 
