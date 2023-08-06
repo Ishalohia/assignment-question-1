@@ -69,7 +69,7 @@ With these changes, the search functionality allows users to input text into the
 
 Ans- In the provided code, I've addressed the issue of console errors regarding keys in the list rendering. By providing a unique key for each row, I've addressed the console error regarding keys. 
 
-The issue was it can't pass row["&id"] as the key because in the given .json file the order id is same for max. 5 orders and <i>React expects each element in an array to have a unique key when rendering lists to efficiently update the virtual DOM. Without unique keys, React cannot accurately track changes and updates to the list items.</i>
+The issue was it can't pass row["&id"] as the key because in the given .json file the order id is same for max. 5 orders and React expects each element in an array to have a unique key when rendering lists to efficiently update the virtual DOM. Without unique keys, React cannot accurately track changes and updates to the list items.
 
 So by creating a function called "generateRandomKey" which creates a unique key for each row in the list i.e. by getting the timestamp in milliseconds, generating a random alphanumeric string and then combining timestamp and random number to create a unique key. 
 
@@ -89,7 +89,7 @@ In src/components/pages/Dashboard.jsx, I'm using the useState hook to manage the
 
 When the user selects an order in the list, the handleOrderSelection function is called. This function takes the selected order's data as an argument, which is the same data that was passed to the onSelectOrder prop in the List component.
 <img width="860" alt="Screenshot 2023-08-06 at 6 16 48 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/cd2fb908-d75b-4cf7-8b8f-5084aa873274">
-<img width="808" alt="Screenshot 2023-08-06 at 6 17 08 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/56634a2e-15f8-42e1-8c50-b8f2f8dca298">
+
 
 In the handleOrderSelection function, extracting the relevant details from the selected order's data, such as buySellIndicator, orderStatus, and orderType. These details are then stored in the selectedOrderDetails state.
 
