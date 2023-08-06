@@ -1,4 +1,4 @@
-<img width="860" alt="Screenshot 2023-08-06 at 6 16 48 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/cd2fb908-d75b-4cf7-8b8f-5084aa873274">## For fixing the following issues
+## For fixing the following issues
 
 1.  In the title of the header, it displays `5 orders` but there are `6 orders` in the table. We want to display the `total` number of `orders` in the header title
    
@@ -88,6 +88,7 @@ In src/components/pages/Dashboard.jsx, I'm using the useState hook to manage the
 <img width="714" alt="Screenshot 2023-08-06 at 6 16 30 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/421828aa-aa2a-4e6a-8017-5db74e63253f">
 
 When the user selects an order in the list, the handleOrderSelection function is called. This function takes the selected order's data as an argument, which is the same data that was passed to the onSelectOrder prop in the List component.
+<img width="860" alt="Screenshot 2023-08-06 at 6 16 48 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/cd2fb908-d75b-4cf7-8b8f-5084aa873274">
 <img width="808" alt="Screenshot 2023-08-06 at 6 17 08 PM" src="https://github.com/Ishalohia/assignment-question-1/assets/104261885/56634a2e-15f8-42e1-8c50-b8f2f8dca298">
 
 In the handleOrderSelection function, extracting the relevant details from the selected order's data, such as buySellIndicator, orderStatus, and orderType. These details are then stored in the selectedOrderDetails state.
